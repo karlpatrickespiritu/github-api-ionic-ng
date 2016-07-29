@@ -3,13 +3,8 @@ import { NavController } from 'ionic-angular';
 
 import {User} from '../../models/user';
 import {GithubUsers} from '../../providers/github-users/github-users';
+import {UserDetailsPage} from '../user-details/user-details';
 
-/*
-  Generated class for the UsersPage page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
-*/
 @Component({
   templateUrl: 'build/pages/users/users.html',
   providers: [GithubUsers]
@@ -21,6 +16,12 @@ export class UsersPage {
     githubUsers
       .load()
       .then(users => this.users = users);
+  }
+
+  goToDetails(event, login) {
+    this.nav.push(UserDetailsPage, {
+      login: login
+    });
   }
 
 }
