@@ -55,7 +55,6 @@ export class GithubUsers {
 
   // Search for github users
   searchUsers(searchParam: string) {
-    console.log(searchParam); return;
     // get the data from the api and return it as a promise
     return new Promise<Array<User>>(resolve => {
     // Change the url to match https://api.github.com/search/users?q={searchParam}

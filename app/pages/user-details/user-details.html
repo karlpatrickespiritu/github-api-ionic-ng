@@ -3,12 +3,22 @@
     <button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>{{login}} Details</ion-title>
+    <ion-title>User Details</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding >
-  <h3>User Details view page</h3>
+  <ion-list>
+    <ion-item>
+      <ion-thumbnail item-left>
+        <img [src]="user.avatar_url">
+      </ion-thumbnail>
+      <h2>{{login}}</h2>
+      <p>{{user.location}}</p>
+      <p>{{user.email}}</p>
+    </ion-item>
+  </ion-list>
+
   <ion-list>
     <ion-item>
       <ion-label>Followers</ion-label>
