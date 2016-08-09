@@ -3,7 +3,7 @@ import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 
 // Import the user model
-import {User} from '../../models/user'
+import {User} from '../../models/user.model'
 
 /*
   Generated class for the GithubUsers provider.

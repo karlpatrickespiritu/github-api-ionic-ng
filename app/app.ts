@@ -1,9 +1,9 @@
-import {Component, ViewChild} from '@angular/core';
-import {ionicBootstrap, Platform, MenuController, Nav} from 'ionic-angular';
-import {StatusBar} from 'ionic-native';
-import {OrganizationsPage} from './pages/organizations/organizations';
-import {ReposPage} from './pages/repos/repos';
-import {UsersPage} from './pages/users/users';
+import { Component, ViewChild } from '@angular/core';
+import { ionicBootstrap, Platform, MenuController, Nav } from 'ionic-angular';
+import { StatusBar } from 'ionic-native';
+import { OrganizationsPage } from './pages/organizations/organizations.component';
+import { ReposPage } from './pages/repos/repos.component';
+import { UsersPage } from './pages/users/users.component';
 
 @Component({
   templateUrl: 'build/app.html'
